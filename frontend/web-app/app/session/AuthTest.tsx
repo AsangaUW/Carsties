@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { updateAuctionText } from '../actions/auctionActions';
+import { updateAuctionTest } from '../actions/auctionActions';
 import { Button } from 'flowbite-react';
 
 
@@ -12,7 +12,7 @@ export default function AuthTest() {
     function doUpdate() {
         setResult(undefined);
         setLoading(true);
-        updateAuctionText()
+        updateAuctionTest()
             .then(res => setResult(res))
             .catch(err => setResult(err))
             .finally(() => setLoading(false));

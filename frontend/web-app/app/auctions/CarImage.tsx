@@ -5,9 +5,9 @@ import React, { useState } from 'react'
 
 type Props = {
     imageUrl: string;
-    make: string;
-    model: string;
-    color: string;
+    make?: string;
+    model?: string;
+    color?: string;
 }
 
 export default function CarImage({ imageUrl, make, model, color }: Props) {
